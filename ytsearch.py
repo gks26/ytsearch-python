@@ -19,7 +19,7 @@ class Youtube:
         response = requests.get(self.__endpoint__+url+param_str)
         return response
 
-    def search(self, type:ResourceType, query, maxresult):
+    def search(self, type, query, maxresult):
         if type not in ['video', 'channel', 'playlist']:
             raise ValueError("Invalid filter parameter. Must be 'channel', 'video', or 'playlist'.")
         if type == "video":
