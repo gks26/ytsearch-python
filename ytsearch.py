@@ -6,8 +6,6 @@ class Youtube:
     def __init__(self, api_key):
         self.__api_key__ = api_key
         self.__endpoint__ = "https://www.googleapis.com/youtube/v3/"
-        if self.__api_key__ == None:
-            self.__api_key__ = ""
 
     def set_api_key(self, key):
         self.__api_key__ = key
